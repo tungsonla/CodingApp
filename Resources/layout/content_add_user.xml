@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/activity_add_user"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/text_margin"
+		android:autoSizeTextType="uniform"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:hint="@string/name_hint"
+		android:id="@+id/user_name" />
+	<TextView  
+        android:layout_marginLeft="20dp"  
+        android:textColor="@color/dangerTextColor"
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/name_message" /> 
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/text_margin"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:hint="@string/password_hint"
+		android:id="@+id/user_password" /> 
+    <TextView  
+        android:layout_marginLeft="20dp"  
+        android:textColor="@color/dangerTextColor"
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/password_message" />  
+	<LinearLayout
+	android:layout_marginTop="40dp"	
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+      android:id="@+id/CancelButton"
+      android:text="@string/cancel"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="5dp"/>
+    <Button
+      android:id="@+id/SaveButton"
+      android:text="@string/save"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="5dp"/>
+  </LinearLayout>
+</LinearLayout>
